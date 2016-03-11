@@ -10,5 +10,5 @@ c = gui()
 c.updateclients(listener.getClients())
 
 time.sleep(2)
-
-v = VoiceSocket(listener.getClients()[0])
+if listener.getClients():
+    v = VoiceSocket(listener.getClients()[0])
